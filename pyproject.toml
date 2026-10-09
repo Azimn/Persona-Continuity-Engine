@@ -14,3 +14,6 @@ pce = "pce.__main__:main"
 
 [tool.setuptools.packages.find]
 include = ["pce*"]
+
+[project.optional-dependencies]
+tokenizer = ["tokenizers>=0.15,<1.0"]
