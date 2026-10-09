@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "experiment": "PCE-M3-PILOT-001",
+  "phase": "pre_execution_preregistration",
+  "utc_date": "2026-10-09",
+  "hash_algorithm": "SHA-256 of exact UTF-8 file bytes including trailing newline",
+  "files": [
+    {
+      "path": "examples/meridian.json",
+      "sha256": "f8164eac92cac31d7e0b546eea735d20de87e7d5046ac9d3b4c01ecd161f4144",
+      "bytes": 3667
+    },
+    {
+      "path": "examples/river.json",
+      "sha256": "0cc5c703399296065326717235a300d9e02c230c497baa67d3b03a39385c115c",
+      "bytes": 3536
+    },
+    {
+      "path": "m3/probes.v1.json",
+      "sha256": "f8e52e42a3ec1f502f1b1d3afc1d73c7b49de57e83c5f54004b8829e8d223941",
+      "bytes": 11853
+    },
+    {
+      "path": "m3/rubric.v1.json",
+      "sha256": "bb3bf86655993881feba1c5fc61e9d14bed36c27b4f9d5e4803542a6cbefcae7",
+      "bytes": 3011
+    },
+    {
+      "path": "m3/preregistration.v1.json",
+      "sha256": "64e0459922bcb850e6567427a78915bbd1a128115de9942815e7ec29b1f2dc92",
+      "bytes": 2886
+    }
+  ],
+  "rule": "Never edit v1 after first scored model response; produce new v2 protocol and cohort for changes.",
+  "verification": "python scripts/verify_m3_freeze.py"
+}
