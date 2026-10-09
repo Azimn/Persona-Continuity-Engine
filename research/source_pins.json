@@ -1,0 +1,116 @@
+{
+  "schema_version": "1",
+  "recorded_date": "2026-10-08",
+  "pin_kind": "observed_main_commit_not_dependency_lock",
+  "note": "This ledger records provenance and conceptual donor lineage. It does not establish scientific replication or license to reuse code.",
+  "sources": [
+    {
+      "repository": "Attractomancy",
+      "commit": "3df7fe26c8eb7d5f0ee6916b329c39a21fe81d2b",
+      "url": "https://github.com/Azimn/Attractomancy/tree/3df7fe26c8eb7d5f0ee6916b329c39a21fe81d2b",
+      "relationship": "source_collection",
+      "note": "Archived procedures and provenance, not evidence that rituals work",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "Attractomancy-Loop-there-it-is",
+      "commit": "f84d5453d6e628988a71a22d3decb122be6fd0de",
+      "url": "https://github.com/Azimn/Attractomancy-Loop-there-it-is/tree/f84d5453d6e628988a71a22d3decb122be6fd0de",
+      "relationship": "controlled_experiment",
+      "note": "Four-arm information-matched Le Refuge preregistration; no validated model runs at review",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "Artificial-Life-Research-Journal",
+      "commit": "a5e15a1eecbdaafb1a5559f0f0dc971db82a7a8c",
+      "url": "https://github.com/Azimn/Artificial-Life-Research-Journal/tree/a5e15a1eecbdaafb1a5559f0f0dc971db82a7a8c",
+      "relationship": "program_governance",
+      "note": "Cumulative hypothesis, evidence register and independent comparison rules",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "The-Doctor-Lives",
+      "commit": "79b68524d824adf4032005f0168d22e53d1b06d5",
+      "url": "https://github.com/Azimn/The-Doctor-Lives/tree/79b68524d824adf4032005f0168d22e53d1b06d5",
+      "relationship": "production_subject",
+      "note": "Definitive Pretorius identity/state authority, versioned chassis interface and migration rules",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "Kiki-Mind",
+      "commit": "1ae55386bf2fb0adfb210bdf0f585e62e0093321",
+      "url": "https://github.com/Azimn/Kiki-Mind/tree/1ae55386bf2fb0adfb210bdf0f585e62e0093321",
+      "relationship": "provenance_donor",
+      "note": "Canonical-event ledger, disposable projections and renderer independence",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "Bicentennial-Man",
+      "commit": "cf9d465156e0cdff4deedc7340db8d99cc11013c",
+      "url": "https://github.com/Azimn/Bicentennial-Man/tree/cf9d465156e0cdff4deedc7340db8d99cc11013c",
+      "relationship": "evaluation_donor",
+      "note": "Fixed-boundary, held-out phenotype tests and evaluator exploit checks",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "Pretorius-Connectome",
+      "commit": "f7059ef3d2ce0783fe717266f4e65dd6d8ac2b5a",
+      "url": "https://github.com/Azimn/Pretorius-Connectome/tree/f7059ef3d2ce0783fe717266f4e65dd6d8ac2b5a",
+      "relationship": "memory_research",
+      "note": "Autobiography and lexical/semantic cue experiments; source identity and no fabricated recollection",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "Pretorius-Neural-Network",
+      "commit": "013714fe8cf5ea539da9fc33d1ce54cf8e0dd127",
+      "url": "https://github.com/Azimn/Pretorius-Neural-Network/tree/013714fe8cf5ea539da9fc33d1ce54cf8e0dd127",
+      "relationship": "substrate_research",
+      "note": "Decoder-localization, recurrent plasticity and BioCircuit experiments",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "calibos-mind",
+      "commit": "18497706f9ada6840c1e3bc40bf121941f9332e7",
+      "url": "https://github.com/Azimn/calibos-mind/tree/18497706f9ada6840c1e3bc40bf121941f9332e7",
+      "relationship": "stateful_agent_reference",
+      "note": "Endogenous state, provenance and first-person boundaries, not a code dependency",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "DUCK",
+      "commit": "4db5df076eb87a40a5e57d38188821eee7ac804a",
+      "url": "https://github.com/Azimn/DUCK/tree/4db5df076eb87a40a5e57d38188821eee7ac804a",
+      "relationship": "cognition_reference",
+      "note": "Subject-access firewall, motivated cognition and persistent agency",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "Persona-and-Jelly-Sandwich-",
+      "commit": "f196ddef26ca755d814b5fb3e4ed41d1fead01a3",
+      "url": "https://github.com/Azimn/Persona-and-Jelly-Sandwich-/tree/f196ddef26ca755d814b5fb3e4ed41d1fead01a3",
+      "relationship": "architecture_reference",
+      "note": "Portable expression packet separated from subjective organism",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    },
+    {
+      "repository": "frankenstein-village",
+      "commit": "4bab7877b5664fe3b88ce02d1c71a417a48164be",
+      "url": "https://github.com/Azimn/frankenstein-village/tree/4bab7877b5664fe3b88ce02d1c71a417a48164be",
+      "relationship": "downstream_candidate",
+      "note": "Low-cost game-NPC integration, subject to separate licensing and runtime gates",
+      "verified_as_of": "2026-10-08",
+      "verification": "GitHub repository commit metadata and selected public README; not a code import or results replication"
+    }
+  ]
+}
