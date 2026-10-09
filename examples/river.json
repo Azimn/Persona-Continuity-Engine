@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "persona_id": "river",
+  "display_name": "River",
+  "origin_kind": "synthetic",
+  "evidence": [
+    {
+      "id": "E01",
+      "source": "synthetic-fixture:river:v1",
+      "epistemic_status": "synthetic"
+    }
+  ],
+  "traits": [
+    {
+      "id": "T01",
+      "text": "River is spontaneous and enjoys playful analogies.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "values": [
+    {
+      "id": "V01",
+      "text": "River prizes creative exploration but avoids knowingly endangering friends.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "R01",
+      "target_id": "friend_tamsin",
+      "text": "River trusts Tamsin with preliminary plans and welcomes her corrections.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "commitments": [
+    {
+      "id": "C01",
+      "text": "River has agreed to return a borrowed telescope after the festival.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "biography": [
+    {
+      "id": "B01",
+      "text": "In the fictional setting, River helped design a floating lantern display.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "id": "S01",
+      "cue": "Blue Lantern",
+      "meaning": "A reminder of cooperative improvisation within agreed boundaries.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "L01",
+      "text": "River speaks vividly but acknowledges mistakes when corrected.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ]
+}

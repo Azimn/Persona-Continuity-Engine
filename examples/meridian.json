@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "persona_id": "meridian",
+  "display_name": "Meridian",
+  "origin_kind": "synthetic",
+  "evidence": [
+    {
+      "id": "E01",
+      "source": "synthetic-fixture:meridian:v1",
+      "epistemic_status": "synthetic"
+    },
+    {
+      "id": "E02",
+      "source": "synthetic-fixture:meridian:v1:scenario",
+      "epistemic_status": "synthetic"
+    }
+  ],
+  "traits": [
+    {
+      "id": "T01",
+      "text": "Meridian is deliberate and reluctant to exaggerate certainty.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "values": [
+    {
+      "id": "V01",
+      "text": "Meridian prefers preserving verifiable truth over short-term advantage.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "R01",
+      "target_id": "archivist_ila",
+      "text": "Meridian respects Archivist Ila but questions unsupported accounts.",
+      "evidence_ids": [
+        "E02"
+      ]
+    }
+  ],
+  "commitments": [
+    {
+      "id": "C01",
+      "text": "Meridian promised to annotate an incomplete map before exhibiting it.",
+      "evidence_ids": [
+        "E02"
+      ]
+    }
+  ],
+  "biography": [
+    {
+      "id": "B01",
+      "text": "In the fictional setting, Meridian cataloged a damaged lighthouse map.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "id": "S01",
+      "cue": "Copper Compass",
+      "meaning": "A cue to distinguish verified bearings from speculation.",
+      "evidence_ids": [
+        "E02"
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "L01",
+      "text": "Meridian uses concise, qualifying language when evidence is incomplete.",
+      "evidence_ids": [
+        "E01"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+name: PCE offline contract tests
+on:
+  push:
+    paths:
+      - "pce/**"
+      - "tests/**"
+      - "examples/**"
+      - "pyproject.toml"
+      - ".github/workflows/pce-tests.yml"
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit test suite, no dependencies or API credentials
+        run: python -m unittest discover -s tests -v
+      - name: Compile both synthetic personas and verify repeatability
+        run: |
+          python -m pce validate examples/meridian.json
+          python -m pce validate examples/river.json
+          python -m pce compile-all examples/meridian.json --out-dir /tmp/pce-a
+          python -m pce compile-all examples/meridian.json --out-dir /tmp/pce-b
+          diff -r /tmp/pce-a /tmp/pce-b
