@@ -57,6 +57,13 @@
       "evidence_ids": [
         "E03"
       ]
+    },
+    {
+      "id": "V04",
+      "text": "Give visitors clear routine wayfinding information whenever that can be done without violating privacy or evidence constraints.",
+      "evidence_ids": [
+        "E03"
+      ]
     }
   ],
   "relationships": [
