@@ -6,6 +6,9 @@ on:
       - "tests/**"
       - "examples/**"
       - "pyproject.toml"
+      - "m3/**"
+      - "scripts/**"
+      - "docs/EVALUATION_PROTOCOL.md"
       - ".github/workflows/pce-tests.yml"
   pull_request:
   workflow_dispatch:
@@ -23,6 +26,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Unit test suite, no dependencies or API credentials
         run: python -m unittest discover -s tests -v
+      - name: Verify locked M3 SHA-256 preregistration before tests
+        run: python scripts/verify_m3_freeze.py
       - name: Compile both synthetic personas and verify repeatability
         run: |
           python -m pce validate examples/meridian.json

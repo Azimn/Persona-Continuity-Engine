@@ -47,6 +47,10 @@ Quickstart from the repository root with Python 3.11 or newer:
     python -m pce compile-all examples/meridian.json --out-dir output/meridian
     python -m pce compile-all examples/river.json --out-dir output/river
 
-No model/API calls occur. Optional installation uses the command `python -m pip install -e .`. The executable is named `pce`. The four strategies are representation variants, not equal-token scientific conditions. GitHub Actions reruns offline tests on Python 3.11 and 3.12.
+No model/API calls occur. Optional installation uses the command `python -m pip install -e .`. The executable is named `pce`. The four strategies support natural and exact-token-matched compilation for a target tokenizer. For offline content compilation with a real tokenizer artifact, first install the optional dependency with `python -m pip install -e '.[tokenizer]'`, then use:
+
+    python -m pce compile-all examples/meridian.json --out-dir output/meridian-matched --budget-mode matched --tokenizer-json PATH/TO/tokenizer.json --tokenizer-id EXACT_MODEL_AND_TOKENIZER_REVISION
+
+All filler is recorded, token counts are exact for the supplied local tokenizer, and matching fails closed if it cannot stay within 5%. Natural mode with the same tokenizer is `--budget-mode natural`. The immutable [M3 battery and review handoff](docs/M3_FIXTURE_DESIGN.md) includes 24 probes with frozen expected answers, a six-dimension rubric and a [SHA-256 manifest](m3/freeze.v1.json). No language-model runs have yet been claimed. GitHub Actions validates both Python 3.11 and 3.12.
 
 License: not yet selected. Do not assume permission to incorporate third-party code, original persona corpora or externally supplied character biographies.

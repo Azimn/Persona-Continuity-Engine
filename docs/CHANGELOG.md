@@ -15,3 +15,7 @@ The four strategies preserve sourced text but are not token-length matched. No c
 ## 2026-10-08, M1 independent CI verification and workflow refinement
 
 Confirmed green repository CI on commit 08487bb under Python 3.11 and 3.12, with raw [run link](https://github.com/Azimn/Persona-Continuity-Engine/actions/runs/37874567188). Refined the CI smoke test to compile the second synthetic character as well, corrected README invocation text, and published a bounded verification record. Await a new CI result before claiming the refined workflow passed.
+
+## 2026-10-08: M3 fixture redesign and budget matching
+
+Revised both synthetic fixture personas with multi-section promises and explicit priority rules; registered 24 field-linked retrieval, integration and conflict probes and all expected answers, predicted single-field failure mechanisms and anchored score dimensions. Pinned preregistration and its five source artifacts using exact SHA-256; added independent hash verifier, tokenizer-aware budget parity compiler, optional local tokenizer.json loader and CLI natural/matched modes, plus offline tests. No model calls or outcome scores were made. Refer to [M3 design](M3_FIXTURE_DESIGN.md).

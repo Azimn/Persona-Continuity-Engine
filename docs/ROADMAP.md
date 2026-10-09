@@ -13,3 +13,7 @@
 **M5: optional adapters and transfer.** Opt-in stable read-only interfaces for The Doctor Lives/Kiki-Mind/other consumers, release and migration review by each canonical repository. No direct state writeback from renderer packets.
 
 Every milestone requires a dated change note; a higher milestone is never silently inferred from code presence. The package may be released at M1 as a compiler without implying any measured persona advantage.
+
+## M3 pre-execution fixture hardening, 2026-10-08
+
+Both synthetic fixtures, all 24 source-linked probes, scoring dimensions, minimum practical thresholds and registered contrasts have been frozen in [m3/freeze.v1.json](../m3/freeze.v1.json). Compiler-level exact-token parity and natural-length mode are implemented ahead of the M2 model runner. The source/probe hash seal does **not** mean M3 model trials are executed or complete. M2 runner and exact model/tokenizer configuration, scorer agreement gate and fresh-session state-transfer design are still required.
