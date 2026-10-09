@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "PCE-M3-PILOT-001",
+  "status": "preregistered_no_model_runs",
+  "date": "2026-10-08",
+  "fixture_paths": [
+    "examples/meridian.json",
+    "examples/river.json"
+  ],
+  "probes": "m3/probes.v1.json",
+  "rubric": "m3/rubric.v1.json",
+  "design": {
+    "personas": 2,
+    "model_families": 2,
+    "strategies": [
+      "factual",
+      "narrative",
+      "symbolic",
+      "hybrid"
+    ],
+    "starts_per_cell": 3,
+    "probes_per_persona": 12,
+    "budget_modes": [
+      "natural",
+      "matched"
+    ],
+    "response_slots_per_budget_mode": 576,
+    "total_response_slots": 1152
+  },
+  "primary_endpoints": [
+    "Per independent start: 0-4 integration_synthesis mean over 4 integration probes",
+    "Per independent start: 0-4 priority_resolution mean over 4 conflict probes"
+  ],
+  "primary_comparisons": [
+    "Hybrid minus factual under token-matched mode on integration",
+    "Hybrid minus factual under token-matched mode on conflict"
+  ],
+  "secondary_comparisons": [
+    "Narrative vs factual and symbolic vs factual under matched mode",
+    "All three alternative arms vs factual under natural mode",
+    "Differences in arm effects between natural and matched modes",
+    "Single-field retrieval performance and unsupported-claim control"
+  ],
+  "minimum_relevant_effects": {
+    "integration_delta_points": 0.5,
+    "conflict_delta_points": 0.5,
+    "permitted_retrieval_decrease_points": 0.25,
+    "permitted_unsupported_claim_control_decrease_points": 0.25
+  },
+  "interpretation": "Screening: consider promising if at least one primary delta >= 0.5/4 and neither retrieval nor unsupported-claim control falls more than 0.25/4. Report all scores and model-family variation; not powered for confirmatory claims.",
+  "sample_unit": "Independent fresh start for each persona x model x arm x budget; probes in a start are correlated.",
+  "token_budget": "Actual versioned target tokenizer. Match each strategy up to the maximum natural length for that persona/tokenizer, 0 to 5% shorter, never longer; preserve and report neutral filler verbatim. Natural mode is required too.",
+  "blinding": "Scorers blind to technique identity, random ordering; human calibration gates specified and approved before trusting automated judge.",
+  "unfinished_pre_execution_items": [
+    "Pin exact model IDs and model-family independence",
+    "Obtain and checksum exact deployed tokenizer(s) and chat template overhead",
+    "Fix decoding settings, context budget and random seeds",
+    "Approve human calibration and scoring process"
+  ],
+  "freeze_rule": "These documents, fields, answer keys, comparisons and rubric are immutable for v1 after a first scored run. Future revisions require v2 and new data.",
+  "exclusions": "No claimed hidden-session memory, no personal memory imports, no model-run claims from authored answer keys."
+}

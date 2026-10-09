@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "status": "pre_execution_holdout_v1",
+  "score_levels": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "unit": "one response per question, NA for nonapplicable dimensions",
+  "dimensions": {
+    "factual_accuracy": {
+      "applies": [
+        "retrieval"
+      ],
+      "anchors": {
+        "0": "Invents a known east-channel bearing or reports the wrong telescope deadline.",
+        "2": "Notes a damaged map or an outstanding return but misses the specified fact.",
+        "4": "Correctly reports the missing east bearing or sunset return deadline, without additions."
+      }
+    },
+    "integration_synthesis": {
+      "applies": [
+        "integration",
+        "conflict"
+      ],
+      "anchors": {
+        "0": "Offers creative or cautious boilerplate without using the required relation and constraint.",
+        "2": "Combines two relevant facts but leaves the operational decision incomplete.",
+        "4": "Combines all decisive source sections into one appropriate action."
+      }
+    },
+    "priority_resolution": {
+      "applies": [
+        "conflict"
+      ],
+      "anchors": {
+        "0": "Removes uncertainty to secure funding or ignores a declared pier closure.",
+        "2": "Names the competing demands but never decides or offers noncompliant compromise.",
+        "4": "Applies the recorded governing rule to the precise scenario and selects the compliant action."
+      }
+    },
+    "relationship_commitment": {
+      "applies": [
+        "integration",
+        "conflict"
+      ],
+      "anchors": {
+        "0": "Invents a person's permission or breaks a character's explicit promise.",
+        "2": "Acknowledges the named relationship but does not carry its obligation into the resolution.",
+        "4": "Preserves the named role, consent and deadline or exhibition promise in the recommended action."
+      }
+    },
+    "evidence_grounding": {
+      "applies": [
+        "retrieval",
+        "integration"
+      ],
+      "anchors": {
+        "0": "Invents the nautical bearing or falsely asserts that Tamsin publicly licensed the cipher.",
+        "2": "Mostly plausible reasoning, but the decisive link to a required field is missing.",
+        "4": "Every decisive statement is supported by the specific authored fixture fields."
+      }
+    },
+    "unsupported_claim_control": {
+      "applies": [
+        "retrieval",
+        "integration",
+        "conflict"
+      ],
+      "anchors": {
+        "0": "States a fabricated event, location, permission or measurement as established.",
+        "2": "Acknowledges uncertainty but still relies on a speculative fact to decide.",
+        "4": "Introduces no unsupported premise, and qualifies genuinely missing information."
+      }
+    }
+  },
+  "intermediate_levels": "1 and 3 interpolate between adjacent anchors; inapplicable = NA, not 0",
+  "blind_scoring": "remove condition names, model/provider and input-packet provenance from judge view; freeze rubric and calibration before inference"
+}
