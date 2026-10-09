@@ -36,7 +36,7 @@ Production transfers into The Doctor Lives, Kiki-Mind, Calibos or Frankenstein V
 
 ## Reproduction and status
 
-Requires Python 3.11 or newer. The initial foundation uses Python standard library only. After the first implementation commit, run tests with: python -m unittest discover -s tests -v . Detailed CLI commands and verified test outcomes must be added only after those artifacts exist.
+Requires Python 3.11 or newer. The initial foundation uses Python's standard library at runtime. It was implemented and tested against the M1 fixture contract. GitHub Actions provides independent checkout-based evidence, documented in the [M1 verification record](research/M1_VERIFICATION_2026-10-08.md).
 
 M1 includes an importable, dependency-free offline Python compiler, two synthetic fixtures, hash-verified packets and a command-line interface. This is a foundation, not a demonstrated persona continuity effect. See [M1 implementation record](docs/M1_IMPLEMENTATION.md) and [change log](docs/CHANGELOG.md).
 
@@ -47,6 +47,6 @@ Quickstart from the repository root with Python 3.11 or newer:
     python -m pce compile-all examples/meridian.json --out-dir output/meridian
     python -m pce compile-all examples/river.json --out-dir output/river
 
-No model/API calls occur. Optional installation: python -m pip install -e . . The executable is named pce. The four strategies are representation variants, not equal-token scientific conditions. GitHub Actions reruns offline tests on Python 3.11 and 3.12.
+No model/API calls occur. Optional installation uses the command `python -m pip install -e .`. The executable is named `pce`. The four strategies are representation variants, not equal-token scientific conditions. GitHub Actions reruns offline tests on Python 3.11 and 3.12.
 
 License: not yet selected. Do not assume permission to incorporate third-party code, original persona corpora or externally supplied character biographies.

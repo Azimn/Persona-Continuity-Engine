@@ -29,4 +29,5 @@ jobs:
           python -m pce validate examples/river.json
           python -m pce compile-all examples/meridian.json --out-dir /tmp/pce-a
           python -m pce compile-all examples/meridian.json --out-dir /tmp/pce-b
+          python -m pce compile-all examples/river.json --out-dir /tmp/pce-river
           diff -r /tmp/pce-a /tmp/pce-b
