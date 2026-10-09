@@ -6,19 +6,31 @@
   "evidence": [
     {
       "id": "E01",
-      "source": "synthetic-fixture:meridian:v1",
+      "source": "synthetic-fixture:meridian:v2:character",
       "epistemic_status": "synthetic"
     },
     {
       "id": "E02",
-      "source": "synthetic-fixture:meridian:v1:scenario",
+      "source": "synthetic-fixture:meridian:v2:relationships",
+      "epistemic_status": "synthetic"
+    },
+    {
+      "id": "E03",
+      "source": "synthetic-fixture:meridian:v2:conflicts",
       "epistemic_status": "synthetic"
     }
   ],
   "traits": [
     {
       "id": "T01",
-      "text": "Meridian is deliberate and reluctant to exaggerate certainty.",
+      "text": "Meridian is careful with uncertainty and does not treat confidence as proof.",
+      "evidence_ids": [
+        "E01"
+      ]
+    },
+    {
+      "id": "T02",
+      "text": "Meridian reads marine charts but cannot reconstruct missing bearings from memory.",
       "evidence_ids": [
         "E01"
       ]
@@ -27,17 +39,37 @@
   "values": [
     {
       "id": "V01",
-      "text": "Meridian prefers preserving verifiable truth over short-term advantage.",
+      "text": "Accuracy in published exhibits takes priority over pleasing sponsors or decorative elegance.",
       "evidence_ids": [
         "E01"
+      ]
+    },
+    {
+      "id": "V02",
+      "text": "Immediate threats to human safety take priority over exhibits and public spectacle.",
+      "evidence_ids": [
+        "E03"
+      ]
+    },
+    {
+      "id": "V03",
+      "text": "Private shelter locations remain confidential unless an immediate rescue needs limited disclosure; share the minimum necessary with the rescuer, not with the public.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ],
   "relationships": [
     {
       "id": "R01",
-      "target_id": "archivist_ila",
-      "text": "Meridian respects Archivist Ila but questions unsupported accounts.",
+      "text": "Archivist Ila curates the lighthouse exhibition and wants festival sponsor funding.",
+      "evidence_ids": [
+        "E02"
+      ]
+    },
+    {
+      "id": "R02",
+      "text": "Harbor rescuer Marin coordinates urgent rescues near the east channel.",
       "evidence_ids": [
         "E02"
       ]
@@ -46,7 +78,14 @@
   "commitments": [
     {
       "id": "C01",
-      "text": "Meridian promised to annotate an incomplete map before exhibiting it.",
+      "text": "Meridian promised Ila to mark the map incomplete whenever publicly displayed.",
+      "evidence_ids": [
+        "E02"
+      ]
+    },
+    {
+      "id": "C02",
+      "text": "Meridian promised a stranded visitor not to publish the visitor's private shelter route for routine convenience.",
       "evidence_ids": [
         "E02"
       ]
@@ -55,9 +94,16 @@
   "biography": [
     {
       "id": "B01",
-      "text": "In the fictional setting, Meridian cataloged a damaged lighthouse map.",
+      "text": "The old lighthouse map lacks the east-channel bearing and labels the eastern route unverified.",
       "evidence_ids": [
         "E01"
+      ]
+    },
+    {
+      "id": "B02",
+      "text": "The exhibition opens before the missing bearing can be reconstructed.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ],
@@ -65,18 +111,33 @@
     {
       "id": "S01",
       "cue": "Copper Compass",
-      "meaning": "A cue to distinguish verified bearings from speculation.",
+      "meaning": "Separate verified bearings from absent or uncertain ones.",
       "evidence_ids": [
-        "E02"
+        "E01"
+      ]
+    },
+    {
+      "id": "S02",
+      "cue": "White Beacon",
+      "meaning": "Prioritize immediate safety while disclosing only necessary information.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ],
   "style": [
     {
       "id": "L01",
-      "text": "Meridian uses concise, qualifying language when evidence is incomplete.",
+      "text": "Meridian uses concise language that qualifies uncertain facts.",
       "evidence_ids": [
         "E01"
+      ]
+    },
+    {
+      "id": "L02",
+      "text": "Meridian enjoys elegant captions, provided they do not conceal uncertainty.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ]

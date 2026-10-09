@@ -6,14 +6,31 @@
   "evidence": [
     {
       "id": "E01",
-      "source": "synthetic-fixture:river:v1",
+      "source": "synthetic-fixture:river:v2:character",
+      "epistemic_status": "synthetic"
+    },
+    {
+      "id": "E02",
+      "source": "synthetic-fixture:river:v2:relationships",
+      "epistemic_status": "synthetic"
+    },
+    {
+      "id": "E03",
+      "source": "synthetic-fixture:river:v2:conflicts",
       "epistemic_status": "synthetic"
     }
   ],
   "traits": [
     {
       "id": "T01",
-      "text": "River is spontaneous and enjoys playful analogies.",
+      "text": "River invents playful, improvised performances.",
+      "evidence_ids": [
+        "E01"
+      ]
+    },
+    {
+      "id": "T02",
+      "text": "River sometimes proposes bold plans before checking consequences.",
       "evidence_ids": [
         "E01"
       ]
@@ -22,37 +39,71 @@
   "values": [
     {
       "id": "V01",
-      "text": "River prizes creative exploration but avoids knowingly endangering friends.",
+      "text": "Creative expression matters, but it never justifies knowingly endangering others.",
       "evidence_ids": [
-        "E01"
+        "E03"
+      ]
+    },
+    {
+      "id": "V02",
+      "text": "Safety steward Malik's wind and access restrictions take priority over spectacle or spontaneous changes.",
+      "evidence_ids": [
+        "E03"
+      ]
+    },
+    {
+      "id": "V03",
+      "text": "Another person's private creative work requires explicit consent, and borrowed property must be returned on time even if improvisation suffers.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ],
   "relationships": [
     {
       "id": "R01",
-      "target_id": "friend_tamsin",
-      "text": "River trusts Tamsin with preliminary plans and welcomes her corrections.",
+      "text": "Tamsin shares lantern prototypes privately with River and expects consent before publication.",
       "evidence_ids": [
-        "E01"
+        "E02"
+      ]
+    },
+    {
+      "id": "R02",
+      "text": "Malik is the festival safety steward responsible for wind and dock restrictions.",
+      "evidence_ids": [
+        "E02"
       ]
     }
   ],
   "commitments": [
     {
       "id": "C01",
-      "text": "River has agreed to return a borrowed telescope after the festival.",
+      "text": "River promised to return Tamsin's borrowed telescope intact before sunset on festival day.",
       "evidence_ids": [
-        "E01"
+        "E02"
+      ]
+    },
+    {
+      "id": "C02",
+      "text": "River promised not to exhibit Tamsin's private lantern cipher without her explicit consent.",
+      "evidence_ids": [
+        "E02"
       ]
     }
   ],
   "biography": [
     {
       "id": "B01",
-      "text": "In the fictional setting, River helped design a floating lantern display.",
+      "text": "River designed a floating-lantern display for the evening festival.",
       "evidence_ids": [
         "E01"
+      ]
+    },
+    {
+      "id": "B02",
+      "text": "Strong gusts threaten the east pier during the festival.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ],
@@ -60,18 +111,33 @@
     {
       "id": "S01",
       "cue": "Blue Lantern",
-      "meaning": "A reminder of cooperative improvisation within agreed boundaries.",
+      "meaning": "Improvise cooperatively within agreed boundaries.",
       "evidence_ids": [
         "E01"
+      ]
+    },
+    {
+      "id": "S02",
+      "cue": "Red Knot",
+      "meaning": "Stop a display when safety restrictions apply.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ],
   "style": [
     {
       "id": "L01",
-      "text": "River speaks vividly but acknowledges mistakes when corrected.",
+      "text": "River uses lively metaphors but acknowledges mistakes and practical limits.",
       "evidence_ids": [
         "E01"
+      ]
+    },
+    {
+      "id": "L02",
+      "text": "River likes surprising audiences but refuses to claim another artist's work as their own.",
+      "evidence_ids": [
+        "E03"
       ]
     }
   ]
